@@ -28,5 +28,13 @@ public class control : MonoBehaviour
         {
             player.transform.Translate(0.5f, 0, 0);
         }
+        if(Input.GetKey(KeyCode.Space))
+        {
+            player.transform.Translate(0, 0.5f, 0);
+        }
+        if(Input.GetKey(KeyCode.LeftControl))
+        {
+            player.transform.Translate(0, -0.5f, 0);
+        }
     }
 }
